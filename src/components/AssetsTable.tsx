@@ -4,8 +4,8 @@ import CryptoContext from '../context/CryptoContext';
 interface DataType {
     key: React.Key;
     name: string;
-    age: number;
-    address: string;
+    price: number;
+    amount: number;
   }
   
   const columns: TableColumnsType<DataType> = [
