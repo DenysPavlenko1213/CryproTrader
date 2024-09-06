@@ -14,10 +14,12 @@ export interface ICrypto{
     marketCap: number
 }
 export interface IAsset{
-    grow: any;
     id: string,
     price: number,
     amount: number,
-    isGrow: boolean,
-    growPercent: number,
+    isGrow?: boolean,
+    date: Date,
+    totalAmount?: number,
+    totalProfit?: number,
+    growPercent?: number,
 }
