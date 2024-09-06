@@ -11,9 +11,7 @@ const siderStyle: React.CSSProperties = {
   
 
 export default function AppSider(){
-    const {isLoading, assets} = useContext(CryptoContext)
-    if(isLoading) 
-        { return <Spin fullscreen /> }
+    const {assets} = useContext(CryptoContext)
     return(
         <Layout.Sider width="25%" style={siderStyle}>
             {assets.map((asset: IAsset) => (

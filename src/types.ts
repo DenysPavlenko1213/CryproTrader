@@ -20,6 +20,7 @@ export interface ICrypto{
 }
 export interface IAsset{
     id: string,
+    name?: string,
     price: number,
     amount: number,
     isGrow?: boolean,
