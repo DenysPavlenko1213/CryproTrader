@@ -5,13 +5,18 @@ export interface ICrypto{
     symbol: string,
     rank: number,
     price: number,
-    availableSupply: number,
-    explorers?: string[],
-    fullyDilutedValuation: number,
     priceBtc: number,
-    totalSupply: number,
     volume: number,
-    marketCap: number
+    marketCap: number,
+    availableSupply: number,
+    totalSupply: number,
+    fullyDilutedValuation: number,
+    priceChange1h: number,
+    priceChange1d: number,
+    priceChange1w: number,
+    redditUrl?: string,
+    twitterUrl?: string,
+    explorers: string[],
 }
 export interface IAsset{
     id: string,
