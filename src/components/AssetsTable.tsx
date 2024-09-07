@@ -41,7 +41,6 @@ function AssetsTable() {
     <Table
     columns={columns}
     dataSource={data}
-    showSorterTooltip={{ target: 'sorter-icon' }}
   />
   )
 }
